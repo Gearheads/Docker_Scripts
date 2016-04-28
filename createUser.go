@@ -26,10 +26,10 @@ import (
 func main() {
 	// admin DTR credentials
 	admin_username := "casaler"
-	admin_password := "adpadp11"
+	admin_password := <password>
 	
 	// DTR fully qualified hostname
-	dtr_full_hostname := "cdldvostk1vdtr001.es.ad.adp.com"
+	dtr_full_hostname := <dtr-hostname>
 	
 	// API responses
 	activate_success := "200 OK"
@@ -95,11 +95,11 @@ func main() {
  */
 func setupProxy() {
 	// By-pass proxy
-	os.Setenv("HTTP_PROXY", "http://paascloud:8e)P4m)I5y(F9@usproxy.es.oneadp.com:8080")
-	os.Setenv("HTTPS_PROXY", "http://paascloud:8e)P4m)I5y(F9@usproxy.es.oneadp.com:8080")
+	os.Setenv("HTTP_PROXY", "http://<username>:<password>@usproxy.es.oneadp.com:8080")
+	os.Setenv("HTTPS_PROXY", "http://<username>:<password>@usproxy.es.oneadp.com:8080")
 	os.Setenv("NO_PROXY", ".es.oneadp.com")
-	os.Setenv("http_proxy", "http://paascloud:8e)P4m)I5y(F9@usproxy.es.oneadp.com:8080")
-	os.Setenv("https_proxy", "http://paascloud:8e)P4m)I5y(F9@usproxy.es.oneadp.com:8080")
+	os.Setenv("http_proxy", "http://<username>:<password>@usproxy.es.oneadp.com:8080")
+	os.Setenv("https_proxy", "http://<username>:<password>@usproxy.es.oneadp.com:8080")
 	os.Setenv("no_proxy", ".es.oneadp.com")
 }
 
