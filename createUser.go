@@ -95,12 +95,12 @@ func main() {
  */
 func setupProxy() {
 	// By-pass proxy
-	os.Setenv("HTTP_PROXY", "http://<username>:<password>@usproxy.es.oneadp.com:8080")
-	os.Setenv("HTTPS_PROXY", "http://<username>:<password>@usproxy.es.oneadp.com:8080")
-	os.Setenv("NO_PROXY", ".es.oneadp.com")
-	os.Setenv("http_proxy", "http://<username>:<password>@usproxy.es.oneadp.com:8080")
-	os.Setenv("https_proxy", "http://<username>:<password>@usproxy.es.oneadp.com:8080")
-	os.Setenv("no_proxy", ".es.oneadp.com")
+	os.Setenv("HTTP_PROXY", "http://<username>:<password>@<proxy-info>:8080")
+	os.Setenv("HTTPS_PROXY", "http://<username>:<password>@<proxy-info>:8080")
+	os.Setenv("NO_PROXY", "<no-proxy-info>")
+	os.Setenv("http_proxy", "http://<username>:<password>@<proxy-info>:8080")
+	os.Setenv("https_proxy", "http://<username>:<password>@<proxy-info>:8080")
+	os.Setenv("no_proxy", "<no-proxy-info>")
 }
 
 /**
