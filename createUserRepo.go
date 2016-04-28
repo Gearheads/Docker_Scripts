@@ -37,7 +37,7 @@ type Users []User
 
 func main() {
 	admin_username := "casaler"
-	admin_password := "adpadp11"
+	admin_password := <password>
 	// API responses
 	//success := "200 OK"
 	account_exists := "400 Bad Request"
@@ -64,10 +64,10 @@ func main() {
 	setupProxy()
 	
 	// Request urls
-	// list_accounts_url := "https://cdldvostk1vdtr001.es.ad.adp.com/api/v0/accounts?start=0&limit=10"
-	create_account_url := "https://cdldvostk1vdtr001.es.ad.adp.com/api/v0/accounts/"
-	// activate_account_url := "https://cdldvostk1vdtr001.es.ad.adp.com/api/v0/accounts/<username>/activate"
-	// create_repo_url := "https://cdldvostk1vdtr001.es.ad.adp.com/api/v0/repositories/<username>/"
+	// list_accounts_url := "https://<dtr-hostname>/api/v0/accounts?start=0&limit=10"
+	create_account_url := "https://<dtr-hostname>/api/v0/accounts/"
+	// activate_account_url := "https://<dtr-hostname>/api/v0/accounts/<username>/activate"
+	// create_repo_url := "https://<dtr-hostname>/api/v0/repositories/<username>/"
 	
 	var jsonCreateUser = []byte(`{"type":"user","name":"`+username+`","password":"`+admin_password+`"}`)
 	
@@ -96,12 +96,12 @@ func main() {
  */
 func setupProxy() {
 	// By-pass proxy
-	os.Setenv("HTTP_PROXY", "http://paascloud:8e)P4m)I5y(F9@usproxy.es.oneadp.com:8080")
-	os.Setenv("HTTPS_PROXY", "http://paascloud:8e)P4m)I5y(F9@usproxy.es.oneadp.com:8080")
+	os.Setenv("HTTP_PROXY", "http://<username>:<password>@<proxy-info>:8080")
+	os.Setenv("HTTPS_PROXY", "http://<username>:<password>@<proxy-info>:8080")
 	os.Setenv("NO_PROXY", ".es.oneadp.com")
-	os.Setenv("http_proxy", "http://paascloud:8e)P4m)I5y(F9@usproxy.es.oneadp.com:8080")
-	os.Setenv("https_proxy", "http://paascloud:8e)P4m)I5y(F9@usproxy.es.oneadp.com:8080")
-	os.Setenv("no_proxy", ".es.oneadp.com")
+	os.Setenv("http_proxy", "http://<username>:<password>@<proxy-info>:8080")
+	os.Setenv("https_proxy", "http://<username>:<password>@<proxy-info>:8080")
+	os.Setenv("no_proxy", "<no-proxy-info>")
 }
 
 /**
