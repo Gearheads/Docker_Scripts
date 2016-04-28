@@ -20,17 +20,17 @@ gcontext = ssl.SSLContext(ssl.PROTOCOL_TLSv1)
 
 # API url requests
 test_url='https://www.google.com'
-url_account='https://cdldvostk1vdtr001.es.ad.adp.com/api/v0/accounts/'
-url_repo='https://cdldvostk1vdtr001.es.ad.adp.com/api/v0/repositories/'
+url_account='https://<dtr-hostname>/api/v0/accounts/'
+url_repo='https://<dtr-hostname>/api/v0/repositories/'
 
 # Login credentials
 username='casaler'
-password='adpadp11'
+password='<password>'
 
 # Proxy settings
 proxies={
-  "http":"http://paascloud:8e)P4m)I5y(F9@usproxy.es.oneadp.com:8080",
-  "https":"http://paascloud:8e)P4m)I5y(F9@usproxy.es.oneadp.com:8080",
+  "http":"http://<username>:<password>@<proxy-info>:8080",
+  "https":"http://<username>:<password>@<proxy-info>:8080",
 }
 
 def build_request(requestUrl):
