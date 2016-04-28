@@ -27,7 +27,7 @@ import (
 func main() {
 	// admin DTR credentials
 	admin_username := "casaler"
-	admin_password := "adpadp11"
+	admin_password := <paasword>
 	
 	// DTR fully qualified hostname
 	dtr_full_hostname := <dtr-hostname>
