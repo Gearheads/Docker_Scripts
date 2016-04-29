@@ -23,21 +23,21 @@ cli = Client(base_url='unix://var/run/docker.sock')
 gcontext = ssl.SSLContext(ssl.PROTOCOL_TLSv1)
 
 # DTR urls
-test_dtr_url='dtr.predit-cdl.es.ad.adp.com'
-cdl_dtr_url='dtr.dit-cdl.es.ad.adp.com'
-dc1_dtr_url='dtr.prod-dc1.es.ad.adp.com'
-dc2_dtr_url='dtr.prod-dc2.es.ad.adp.com'
+test_dtr_url='<dtr-hostname>'
+cdl_dtr_url='<dtr-hostname>'
+dc1_dtr_url='<dtr-hostname>'
+dc2_dtr_url='<dtr-hostname>'
 
 # API url requests
-test_dtr_repo_url='https://dtr.predit-cdl.es.ad.adp.com/api/v0/repositories/'
-cdl_dtr_repo_url='https://dtr.dit-cdl.es.ad.adp.com/api/v0/repositories/'
-dc1_dtr_repo_url='https://dtr.prod-dc1.es.ad.adp.com/api/v0/repositories/'
-dc2_dtr_repo_url='https://dtr.prod-dc2.es.ad.adp.com/api/v0/repositories/'
+test_dtr_repo_url='https://<dtr-hostname>/api/v0/repositories/'
+cdl_dtr_repo_url='https://<dtr-hostname>/api/v0/repositories/'
+dc1_dtr_repo_url='https://<dtr-hostname>/api/v0/repositories/'
+dc2_dtr_repo_url='https://<dtr-hostname>/api/v0/repositories/'
 
 # Login credentials
 username='casaler'
-password='adpadp11'
-email='robert.casale@adp.com'
+password='<password>'
+email='<e-mail>'
 
 # DTR login responses
 login_status='Status'
@@ -51,8 +51,8 @@ repositories='repositories'
 
 # Proxy settings
 proxies={
-  "http":"http://paascloud:8e)P4m)I5y(F9@usproxy.es.oneadp.com:8080",
-  "https":"http://paascloud:8e)P4m)I5y(F9@usproxy.es.oneadp.com:8080",
+  "http":"http://<username>:<password>@<proxy-info>:8080",
+  "https":"http://<username>:<password>@<proxy-info>:8080",
 }
 
 # Build request
