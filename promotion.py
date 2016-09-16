@@ -37,7 +37,7 @@ dc2_dtr_repo_url='https://dtr.prod-dc2.es.ad.adp.com/api/v0/repositories/'
 
 # Login credentials
 username='casaler'
-password='adpadp11'
+password=''
 email='robert.casale@adp.com'
 
 # DTR login responses
@@ -52,8 +52,8 @@ repositories='repositories'
 
 # Proxy settings
 proxies={
-  "http":"http://paascloud:8e)P4m)I5y(F9@usproxy.es.oneadp.com:8080",
-  "https":"http://paascloud:8e)P4m)I5y(F9@usproxy.es.oneadp.com:8080",
+  "http":"http://@usproxy.es.oneadp.com:8080",
+  "https":"http://@usproxy.es.oneadp.com:8080",
 }
 
 # Build request
