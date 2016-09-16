@@ -33,7 +33,7 @@ cdl_dtr_repo_url='https://dtr.dit-cdl.es.ad.adp.com/api/v0/repositories/'
 
 # Login credentials for DTR1
 username='casaler'
-password='adpadp11'
+password=''
 email='robert.casale@adp.com'
 
 # Login credentials for DTR2
@@ -51,8 +51,8 @@ repositories='repositories'
 
 # Proxy settings
 proxies={
-  "http":"http://paascloud:8e)P4m)I5y(F9@usproxy.es.oneadp.com:8080",
-  "https":"http://paascloud:8e)P4m)I5y(F9@usproxy.es.oneadp.com:8080",
+  "http":"http://@usproxy.es.oneadp.com:8080",
+  "https":"http://@usproxy.es.oneadp.com:8080",
 }
 
 # Build request
