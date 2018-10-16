@@ -52,8 +52,8 @@ repositories='repositories'
 
 # Proxy settings
 proxies={
-  "http":"http://@usproxy.es.oneadp.com:8080",
-  "https":"http://@usproxy.es.oneadp.com:8080",
+  "http":"http://<username>:<password>@<proxy-info>:8080",
+  "https":"http://<username>:<password>@<proxy-info>:8080",
 }
 
 # Build request
