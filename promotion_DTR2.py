@@ -24,17 +24,17 @@ cli = Client(base_url='unix://var/run/docker.sock')
 gcontext = ssl.SSLContext(ssl.PROTOCOL_TLSv1)
 
 # DTR urls
-cdl_dtr2_url='dtr.cdl.es.ad.adp.com'
-cdl_dtr_url='dtr.dit-cdl.es.ad.adp.com'
+cdl_dtr2_url='<dtr-hostname>'
+cdl_dtr_url='<dtr-hostname>'
 
 # API url requests
-cdl_dtr2_repo_url='https://dtr.cdl.es.ad.adp.com/api/v0/repositories/'
-cdl_dtr_repo_url='https://dtr.dit-cdl.es.ad.adp.com/api/v0/repositories/'
+cdl_dtr2_repo_url='https://<dtr-hostname>/api/v0/repositories/'
+cdl_dtr_repo_url='https://<dtr-hostname>/api/v0/repositories/'
 
 # Login credentials for DTR1
 username='casaler'
 password=''
-email='robert.casale@adp.com'
+email='<email>'
 
 # Login credentials for DTR2
 username2='admin'
@@ -51,8 +51,8 @@ repositories='repositories'
 
 # Proxy settings
 proxies={
-  "http":"http://@usproxy.es.oneadp.com:8080",
-  "https":"http://@usproxy.es.oneadp.com:8080",
+  "http":"http://<username>:<password>@<proxy-info>.com:8080",
+  "https":"http://<username>:<password>@<proxy-info>:8080",
 }
 
 # Build request
