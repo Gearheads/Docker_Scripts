@@ -24,21 +24,21 @@ cli = Client(base_url='unix://var/run/docker.sock')
 gcontext = ssl.SSLContext(ssl.PROTOCOL_TLSv1)
 
 # DTR urls
-test_dtr_url='dtr.predit-cdl.es.ad.adp.com'
-cdl_dtr_url='dtr.dit-cdl.es.ad.adp.com'
-dc1_dtr_url='dtr.prod-dc1.es.ad.adp.com'
-dc2_dtr_url='dtr.prod-dc2.es.ad.adp.com'
+test_dtr_url='<dtr-hostname>'
+cdl_dtr_url='<dtr-hostname>'
+dc1_dtr_url='<dtr-hostname>'
+dc2_dtr_url='<dtr-hostname>'
 
 # API url requests
-test_dtr_repo_url='https://dtr.predit-cdl.es.ad.adp.com/api/v0/repositories/'
-cdl_dtr_repo_url='https://dtr.dit-cdl.es.ad.adp.com/api/v0/repositories/'
-dc1_dtr_repo_url='https://dtr.prod-dc1.es.ad.adp.com/api/v0/repositories/'
-dc2_dtr_repo_url='https://dtr.prod-dc2.es.ad.adp.com/api/v0/repositories/'
+test_dtr_repo_url='https://<dtr-hostname>/api/v0/repositories/'
+cdl_dtr_repo_url='https://<dtr-hostname>/api/v0/repositories/'
+dc1_dtr_repo_url='https://<dtr-hostname>/api/v0/repositories/'
+dc2_dtr_repo_url='https://<dtr-hostname>/api/v0/repositories/'
 
 # Login credentials
 username='casaler'
 password=''
-email='robert.casale@adp.com'
+email='<email>'
 
 # DTR login responses
 login_status='Status'
